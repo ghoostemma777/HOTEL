@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Servicios - Suite de Lujo en Tijuana</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: #cbd6e6;
+      min-height: 100vh;
+      background:
+        linear-gradient(rgba(27, 38, 59, 0.45), rgba(27, 38, 59, 0.45)),
+        url('FONDOSERVICOS.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .container {
+      background: rgba(27, 38, 59, 0.85);
+      max-width: 700px;
+      width: 100%;
+      border-radius: 20px;
+      padding: 30px 40px;
+      box-shadow: 0 15px 40px rgba(65, 90, 119, 0.6);
+    }
+
+    h1, h2 {
+      font-weight: 700;
+      color: #778da9;
+      text-shadow: 0 0 5px #415a77;
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    ul li {
+      background: #415a77;
+      margin: 12px 0;
+      padding: 15px 20px;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(65, 90, 119, 0.3);
+      font-weight: 300;
+      font-size: 1.1rem;
+      color: #e0e1dd;
+      display: flex;
+      gap: 8px;
+    }
+
+    ul li span {
+      font-weight: 600;
+      color: #a9b7d6;
+      min-width: 180px;
+      flex-shrink: 0;
+      text-shadow: 0 0 3px #415a77;
+    }
+
+    .images {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-bottom: 25px;
+    }
+
+    .images img {
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+      max-width: 100%;
+      height: auto;
+      width: 280px;
+      object-fit: cover;
+    }
+
+    p a {
+      display: inline-block;
+      margin-top: 25px;
+      font-weight: 600;
+      font-size: 1.1rem;
+      text-decoration: none;
+      color: #778da9;
+      border: 2px solid #778da9;
+      padding: 12px 30px;
+      border-radius: 50px;
+      box-shadow: 0 0 10px #778da9;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+
+    p a:hover {
+      background: #415a77;
+      color: #e0e1dd;
+      box-shadow: 0 0 20px #415a77;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 18px;
+      width: 100%;
+    }
+
+    form label {
+      width: 100%;
+      color: #a9b7d6;
+      font-weight: 600;
+      font-size: 0.95rem;
+      text-align: left;
+    }
+
+    form input[type="text"],
+    form input[type="date"],
+    form input[type="email"],
+    form input[type="tel"],
+    form input[type="number"],
+    form input[type="time"] {
+      width: 100%;
+      padding: 12px 18px;
+      border-radius: 12px;
+      border: 1px solid #415a77;
+      background-color: #2c3e50;
+      color: #e0e1dd;
+      font-weight: 300;
+      font-size: 1.1rem;
+      box-shadow: inset 0 0 5px #778da9;
+    }
+
+    form input::placeholder {
+      color: #a9b7d6;
+    }
+
+    form button {
+      width: 50%;
+      background-color: #778da9;
+      color: #1b263b;
+      font-weight: 600;
+      font-size: 1.2rem;
+      padding: 14px 0;
+      border-radius: 50px;
+      box-shadow: 0 0 15px #778da9;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    form button:hover {
+      background-color: #415a77;
+      color: #e0e1dd;
+      box-shadow: 0 0 25px #415a77;
+    }
+
+    @media (max-width: 768px) {
+      ul li {
+        flex-direction: column;
+        font-size: 1rem;
+      }
+
+      ul li span {
+        min-width: auto;
+        text-align: center;
+        margin-bottom: 6px;
+      }
+
+      .images img {
+        width: 90vw;
+      }
+
+      form button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Servicios - Suite de Lujo en Tijuana</h1>
+    <div class="images">
+      <img src="suite de lujo tijuana.jpg" alt="Vista de la Suite de Lujo 1" />
+      <img src="gold-coast.png" alt="Vista de la Suite de Lujo 2" />
+    </div>
+    <ul>
+      <li><span>Jacuzzi:</span> Privado para relajación total.</li>
+      <li><span>Vistas:</span> Panorámicas a la ciudad o el paisaje costero.</li>
+      <li><span>Baño:</span> Con acabados de lujo, ducha y bañera independientes, y amenidades locales premium.</li>
+      <li><span>Minibar:</span> Equipado con opciones locales, como vinos de Baja California.</li>
+      <li><span>Concierge VIP:</span> Servicio exclusivo para planear visitas a Valle de Guadalupe o la región.</li>
+      <li><span>Wi-Fi:</span> Acceso gratuito de alta velocidad.</li>
+      <li><span>Entretenimiento:</span> Smart TV con sistemas de streaming y sonido envolvente.</li>
+      <li><span>Limpieza diaria:</span> Horario: 9:00 AM - 3:00 PM.</li>
+    </ul>
+    <p><a href="tijuana.html">VOLVER ATRÁS</a></p>
+  </div>
+
+  <div class="container">
+    <h2>Reservar Habitación</h2>
+    <form action="./reservacompletada.html" method="GET">
+      <label for="nombre">Nombre completo:</label>
+      <input type="text" id="nombre" name="nombre" placeholder="Tu Nombre" required />
+
+      <label for="fecha_ingreso">Fecha de ingreso:</label>
+      <input type="date" id="fecha_ingreso" name="fecha_ingreso" required />
+
+      <label for="hora_ingreso">Hora de ingreso:</label>
+      <input type="time" id="hora_ingreso" name="hora_ingreso" required />
+
+      <label for="fecha_salida">Fecha de salida:</label>
+      <input type="date" id="fecha_salida" name="fecha_salida" required />
+
+      <label for="pais">País:</label>
+      <input type="text" id="pais" name="pais" placeholder="País" required />
+
+      <label for="ciudad">Ciudad:</label>
+      <input type="text" id="ciudad" name="ciudad" placeholder="Ciudad" required />
+
+      <label for="telefono">Teléfono:</label>
+      <input type="tel" id="telefono" name="telefono" placeholder="Teléfono" required />
+
+      <label for="correo">Correo electrónico:</label>
+      <input type="email" id="correo" name="correo" placeholder="Correo electrónico" required />
+
+      <label for="personas">Cantidad de personas:</label>
+      <input type="number" id="personas" name="personas" placeholder="Cantidad de personas" min="1" max="10" required />
+
+      <button type="submit">Reservar</button>
+    </form>
+  </div>
+</body>
+</html>
+
