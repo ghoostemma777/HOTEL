@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hotel E&E - Estilo Coolors</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #0d1b2a;
+      color: #e0e1dd;
+      min-height: 100vh;
+      line-height: 1.6;
+    }
+
+    a {
+      color: #778da9;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+      color: #415a77;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 20px 80px;
+      text-align: center;
+    }
+
+    h1 {
+      font-weight: 700;
+      font-size: 3rem;
+      margin-bottom: 15px;
+      color: #778da9;
+      text-shadow: 0 0 5px #415a77;
+    }
+
+    .marquesina {
+      overflow: hidden;
+      white-space: nowrap;
+      background-color: #1b263b;
+      color: #778da9;
+      padding: 12px 0;
+      font-weight: 600;
+      font-size: 1.25rem;
+      margin: 30px 0;
+      border-radius: 30px;
+      border: 2px solid #415a77;
+      position: relative;
+      box-shadow: 0 0 10px #415a77;
+    }
+
+    .marquesina-texto {
+      display: inline-block;
+      padding-left: 100%;
+      animation: desplazamiento 15s linear infinite;
+    }
+
+    @keyframes desplazamiento {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-100%); }
+    }
+
+    .intro {
+      font-weight: 300;
+      font-size: 1.15rem;
+      max-width: 900px;
+      margin: 0 auto 30px;
+      color: #e0e1dd;
+      text-shadow: 0 0 3px #415a77;
+    }
+
+    .btn-link {
+      display: inline-block;
+      margin-bottom: 50px;
+      padding: 14px 32px;
+      border: 2px solid #778da9;
+      border-radius: 50px;
+      font-weight: 600;
+      font-size: 1.1rem;
+      letter-spacing: 0.06em;
+      background: transparent;
+      cursor: pointer;
+      transition: background 0.3s ease, color 0.3s ease;
+      color: #778da9;
+      box-shadow: 0 0 10px #778da9;
+      text-decoration: none;
+      user-select: none;
+    }
+
+    .btn-link:hover {
+      background: #415a77;
+      color: #e0e1dd;
+      box-shadow: 0 0 20px #415a77;
+    }
+
+    .locations {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 28px;
+      margin-bottom: 60px;
+      padding: 0 10px;
+    }
+
+    .location {
+      background: #1b263b;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(65, 90, 119, 0.15);
+      padding: 18px;
+      color: #e0e1dd;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      cursor: pointer;
+      user-select: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 300px;
+    }
+
+    .location:hover {
+      transform: translateY(-10px) scale(1.05);
+      box-shadow: 0 15px 40px rgba(65, 90, 119, 0.5);
+      background: #415a77;
+    }
+
+    .location img {
+      border-radius: 15px 15px 0 0;
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      margin-bottom: 15px;
+      box-shadow: 0 6px 15px rgba(65, 90, 119, 0.3);
+    }
+
+    .location h3 {
+      margin-bottom: 10px;
+      font-weight: 700;
+      font-size: 1.3rem;
+      color: #778da9;
+      text-shadow: 0 0 4px #415a77;
+    }
+
+    .location p {
+      font-weight: 300;
+      font-size: 1rem;
+      line-height: 1.4;
+      color: #e0e1dd;
+      flex-grow: 1;
+    }
+
+    .video-container {
+      max-width: 900px;
+      margin: 0 auto 60px;
+      border-radius: 20px;
+      box-shadow: 0 15px 40px rgba(65, 90, 119, 0.5);
+      overflow: hidden;
+      text-align: center;
+    }
+
+    .video-title {
+      font-size: 2rem;
+      margin-bottom: 16px;
+      font-weight: 700;
+      color: #778da9;
+      text-shadow: 0 0 12px #415a77;
+      text-align: center;
+      padding: 10px 0 0 0;
+    }
+
+    .video-container video {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 20px;
+      filter: drop-shadow(0 0 8px #778da9);
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    .video-container video:hover {
+      transform: scale(1.03);
+      filter: drop-shadow(0 0 15px #415a77);
+    }
+
+    .audio-section {
+      max-width: 700px;
+      margin: 40px auto 80px;
+      text-align: center;
+      color: #e0e1dd;
+    }
+
+    .audio-title {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #778da9;
+      text-shadow: 0 0 10px #415a77;
+      margin-bottom: 12px;
+    }
+
+    .audio-description {
+      font-size: 1.05rem;
+      font-weight: 300;
+      margin-bottom: 25px;
+      color: #e0e1dd;
+      text-shadow: 0 0 6px #415a77;
+    }
+
+    .audio-container {
+      box-shadow: 0 6px 20px rgba(65, 90, 119, 0.3);
+      border-radius: 15px;
+      overflow: hidden;
+      background: #1b263b;
+      padding: 10px 15px;
+    }
+
+    .audio-container audio {
+      width: 100%;
+      outline: none;
+      display: block;
+      height: 50px;
+      filter: drop-shadow(0 0 4px #778da9);
+      border-radius: 10px;
+    }
+
+    .sponsor-section {
+      background: #1b263b;
+      border: 2px solid #415a77;
+      border-radius: 20px;
+      padding: 30px 20px;
+      margin: 60px 0 40px;
+      box-shadow: 0 0 20px rgba(119, 141, 169, 0.4);
+      text-align: center;
+    }
+
+    .sponsor-title {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #778da9;
+      margin-bottom: 20px;
+      text-shadow: 0 0 8px #415a77;
+    }
+
+    .sponsor-image {
+      width: 100%;
+      max-width: 500px;
+      height: auto;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.4);
+      margin-bottom: 15px;
+    }
+
+    .sponsor-name {
+      font-size: 1.2rem;
+      color: #e0e1dd;
+      font-weight: 600;
+      text-shadow: 0 0 6px #778da9;
+    }
+
+    .footer {
+      background: #0d1b2a;
+      color: #778da9;
+      padding: 20px 10px;
+      text-align: center;
+      font-weight: 500;
+      font-size: 1rem;
+      letter-spacing: 0.05em;
+      box-shadow: 0 -6px 20px rgba(65, 90, 119, 0.4);
+      user-select: none;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2.4rem;
+      }
+      .video-title {
+        font-size: 1.6rem;
+      }
+      .locations {
+        gap: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Bienvenidos a Hotel E&E</h1>
+
+    <div class="marquesina">
+      <div class="marquesina-texto">
+        ¡Reserva ahora y vive la experiencia E&E con descuentos exclusivos por temporada!
+      </div>
+    </div>
+
+    <p class="intro">
+      E&amp;E es una prestigiosa marca de hoteles en México, conocida por su hospitalidad excepcional y su compromiso con la comodidad de sus huéspedes. Nos encontramos en diversas localidades a lo largo del país, brindando experiencias inolvidables en cada estancia.
+    </p>
+
+    <a href="https://www.kayak.com/Mexico-Hotels.158.dc.html" class="btn-link" target="_blank" rel="noopener noreferrer">
+      VISITA MÁS HOTELES AQUÍ
+    </a>
+
+    <div class="locations">
+      <div class="location" tabindex="0">
+        <a href="monterrey.html"><img src="hotelmonterrey.jpg" alt="Hotel en Monterrey"></a>
+        <h3>Monterrey</h3>
+        <p>Disfruta de la vibrante cultura y gastronomía de Monterrey, alojándote en nuestro hotel ubicado en el corazón de la ciudad.</p>
+      </div>
+      <div class="location" tabindex="0">
+        <a href="cdmx.html"><img src="hotelcdmx.jpeg" alt="Hotel en Ciudad de México"></a>
+        <h3>Ciudad de México (CDMX)</h3>
+        <p>Descubre la riqueza histórica y moderna de la capital mexicana desde nuestro cómodo y elegante hotel.</p>
+      </div>
+      <div class="location" tabindex="0">
+        <a href="cancun.html"><img src="hotelcancun.jpg" alt="Hotel en Cancún"></a>
+        <h3>Cancún</h3>
+        <p>Relájate en las hermosas playas de Cancún y disfruta de nuestro resort de lujo frente al mar.</p>
+      </div>
+      <div class="location" tabindex="0">
+        <a href="tijuana.html"><img src="hoteltijuana.jpg" alt="Hotel en Tijuana"></a>
+        <h3>Tijuana</h3>
+        <p>Explora la frontera entre México y Estados Unidos y disfruta de nuestra excelente hospitalidad en Tijuana.</p>
+      </div>
+      <div class="location" tabindex="0">
+        <a href="guadalajara.html"><img src="hotelgualajara.jpg" alt="Hotel en Guadalajara"></a>
+        <h3>Guadalajara</h3>
+        <p>Sumérgete en la tradición y modernidad de Guadalajara, hospedándote en nuestro hotel céntrico.</p>
+      </div>
+    </div>
+
+    <div class="video-container">
+      <div class="video-title">Conoce Hotel E&E en acción</div>
+      <video controls>
+        <source src="istockphoto-1081680032-640_adpp_is.mp4" type="video/mp4" />
+        Tu navegador no soporta la reproducción de video.
+      </video>
+    </div>
+
+  <div class="audio-section">
+      <h2 class="audio-title">Música Original Hotel E&E</h2>
+      <p class="audio-description">
+        Sumérgete en la atmósfera única de nuestro hotel con esta exclusiva pieza musical, compuesta especialmente para reflejar la esencia y elegancia de E&E.
+      </p>
+      <div class="audio-container">
+        <audio controls>
+          <source src="elegant-148649.mp3" type="audio/mp3">
+        </audio>
+      </div>
+  </div>
+<div class="sponsor-section">
+      <h2 class="sponsor-title">Patrocinadores Oficiales</h2>
+      <div class="sponsor-images">
+        <a href="https://jesus-moran.github.io/OpticaWizard/" target="_blank">
+          <img src="Publicidad(2).jpg" alt="Óptica Wizard - Ver bien es magia" class="sponsor-image">
+        </a>
+        <a href="https://angelmanguila.github.io/Zapamania/" target="_blank">
+          <img src="patrocinador3.jpeg" alt="Zapatos Zapamania" class="sponsor-image">
+        </a>
+      </div>
+      <p class="sponsor-name">Óptica Wizard & Zapamania</p>
+    </div>
+
+  </div>
+ </body>
+</html> <!-- Sección de patrocinador -->
+  </div>
+
+  <div class="footer">
+    <p>&copy; 2025 Hotel E&E. Todos los derechos reservados.</p>
+  </div>
+
+</body>
+</html>
